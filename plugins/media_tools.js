@@ -11,11 +11,11 @@ const {
   const {
       saveMessage
   } = require('./misc/saveMessage');
-  const {skbuffer} = require('raganork-bot');
+  const {skbuffer} = require('Chifuyu-2');
   const {
       trim,
       trimVideo
-  } = require('raganork-bot');
+  } = require('Chifuyu-2');
   const {
       MODE
   } = require('../config');
