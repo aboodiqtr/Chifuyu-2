@@ -17,7 +17,7 @@ let Lang = getString('external_plugin');
 var handler = Config.HANDLERS !== 'false'?Config.HANDLERS.split("")[0]:""
 
 Module({
-    pattern: 'install ?(.*)',
+    pattern: 'تحميل ?(.*)',
     fromMe: true,
     use: 'owner',
     desc: Lang.INSTALL_DESC
@@ -88,7 +88,7 @@ Module({
 }));
 
 Module({
-    pattern: 'remove(?: |$)(.*)',
+    pattern: 'مسح(?: |$)(.*)',
     fromMe: true,
     use: 'owner',
     desc: Lang.REMOVE_DESC
