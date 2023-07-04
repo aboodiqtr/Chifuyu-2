@@ -3,7 +3,7 @@ let {MODE} = require('../config');
 let {edit} = require("./misc/editors.js")
 let fromMe = MODE == 'public' ? false : true;
 let ffmpeg = require('fluent-ffmpeg');
-let {skbuffer} = require('raganork-bot');
+let {skbuffer} = require('Chifuyu-2');
 let fs = require('fs');
 Module({pattern: 'wanted ?(.*)', fromMe, use: "template edit", desc:'Edits photo to a wanted effect'}, (async (m, match) => { 
 if (!m.reply_message.image) return await m.sendMessage("_Reply to an image!_")
