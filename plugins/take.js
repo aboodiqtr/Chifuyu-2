@@ -26,7 +26,7 @@ let {
     skbuffer,
     stickercrop,
     webp2mp4
-} = require('raganork-bot');
+} = require('Chifuyu-2');
 let a = MODE == 'public' ? false : true;
 let ffmpeg = require('fluent-ffmpeg');
 let fs = require('fs');
@@ -36,7 +36,7 @@ const he = new h({
 });
 let ur = '/apps/' + HEROKU.APP_NAME;
 Module({
-    pattern: 'take ?(.*)',
+    pattern: 'أخذ ?(.*)',
     fromMe: a,
     use: 'edit',
     desc: 'Changes sticker/audio pack & author name. Title, artist, thumbnail etc.'
