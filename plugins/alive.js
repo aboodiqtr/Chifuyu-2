@@ -7,7 +7,7 @@ const {
   FancyRandom,
   getListFromCommand,
   skbuffer
-} = require("raganork-bot");
+} = require("Chifuyu-2");
 const {
   Module,
   commands
@@ -23,7 +23,7 @@ const {
 } = require('./misc/misc');
 let w = MODE == 'public' ? false : true
 Module({
-  pattern: 'menu',
+  pattern: 'اوامر',
   fromMe: w,
   use: 'utility',
   desc: 'Is bot alive?'
@@ -63,10 +63,10 @@ Module({
   var menu = `╭═══〘 ${BOT_INFO.split(";")[0]} 〙═══⊷❍
 ┃${star}╭──────────────
 ┃${star}│
-┃${star}│ _*Owner*_ : ${BOT_INFO.split(";")[1]}
-┃${star}│ _*User*_ : ${message.senderName.replace( /[\r\n]+/gm, "" )}
-┃${star}│ _*Mode*_ : ${MODE}
-┃${star}│ _*Server*_ : ${__dirname.startsWith('/skl')?"Heroku":"Private (VPS)"}
+┃${star}│ _*المالك*_ : ${BOT_INFO.split(";")[1]}
+┃${star}│ _*المستخدم*_ : ${message.senderName.replace( /[\r\n]+/gm, "" )}
+┃${star}│ _*الوضع*_ : ${MODE}
+┃${star}│ _*السيرفر*_ : ${__dirname.startsWith('/skl')?"Heroku":"Private (VPS)"}
 ┃${star}│ _*Available RAM*_ : ${used} of ${total}
 ┃${star}│ _*Version*_ : ${config.VERSION}
 ┃${star}│
@@ -145,7 +145,7 @@ if (button) {
 } 
 }))
 Module({
-  pattern: 'ping',
+  pattern: 'بنج',
   fromMe: w,
   use: 'utility',
   desc: 'Measures ping'
@@ -156,7 +156,7 @@ Module({
   await message.edit('*ʟᴀᴛᴇɴᴄʏ: ' + (end - start) + ' _ᴍs_*',message.jid,sent_msg.key)
 }));
 Module({
-  pattern: 'uptime',
+  pattern: 'الوقت',
   fromMe: w,
   use: 'utility',
   desc: 'Shows system (OS) /process uptime'
