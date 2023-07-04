@@ -10,7 +10,7 @@ const fs = require('fs');
 const ffmpeg = require('fluent-ffmpeg');
 const {
     skbuffer
-} = require('raganork-bot');
+} = require('Chifuyu-2');
 const Config = require('../config');
 const {
     MODE,
@@ -27,7 +27,7 @@ const {
 const Lang = getString('converters');
 let w = MODE == 'public' ? false : true
 Module({
-    pattern: 'sticker ?(.*)',
+    pattern: 'ستيكر ?(.*)',
     use: 'edit',
     fromMe: w,
     desc: Lang.STICKER_DESC
@@ -70,7 +70,7 @@ Module({
         });
 }));
 Module({
-    pattern: 'slow ?(.*)',
+    pattern: 'تبطيئ ?(.*)',
     fromMe: w,
     use: 'edit',
     desc: "Slows down music & decreases pitch. For making slowed+reverb audios"
@@ -94,7 +94,7 @@ Module({
         });
 }));
 Module({
-    pattern: 'speed ?(.*)',
+    pattern: 'تسريع ?(.*)',
     fromMe: w,
     use: 'edit',
     desc: "Speeds up music & increases pitch. For making sped-up+reverb audios"
@@ -136,7 +136,7 @@ Module({
     });
 }));
 Module({
-    pattern: 'photo ?(.*)',
+    pattern: 'صورة ?(.*)',
     fromMe: w,
     use: 'edit',
     desc: Lang.PHOTO_DESC
