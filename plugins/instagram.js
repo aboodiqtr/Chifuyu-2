@@ -19,7 +19,7 @@ const {
     getStalk,
     getStory,
     skbuffer
-} = require('raganork-bot');
+} = require('Chifuyu-2');
 const {
     downloadGram,
     pin,
