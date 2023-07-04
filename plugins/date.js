@@ -4,7 +4,7 @@ const {Module} = require('../main')
 const {MODE} = require('../config');
 let auto = MODE == 'public' ? false : true
 Module({
-  pattern: 'age ?(.*)',
+  pattern: 'عمرك ?(.*)',
   fromMe: auto,
   desc: 'Age calculator .age dob',
   use: 'utility',
