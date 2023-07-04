@@ -45,7 +45,7 @@ async function sendButton(buttons,text,footer,message){
     } = require('./misc/misc');
     const {
         skbuffer 
-    } = require('raganork-bot');
+    } = require('Chifuyu-2');
     const { 
         chatBot
     } = require('./misc/misc');
@@ -152,7 +152,7 @@ fs.writeFileSync('./config.env', lines.join('\n'));
         return dDisplay + hDisplay + mDisplay + sDisplay;
         }
     Module({
-        pattern: 'restart$',
+        pattern: 'اعادة تشغيل$',
         fromMe: true,
         dontAddCommandList: true,
         use: 'owner'
@@ -165,14 +165,14 @@ fs.writeFileSync('./config.env', lines.join('\n'));
         });
     }));
     Module({
-        pattern: 'platform',
+        pattern: 'المنصة',
         fromMe: true,
         use: 'settings'
     }, (async (message, match) => {
       return await message.sendReply(`_Bot is running on ${config.PLATFORM}_`)
     }));
     Module({
-        pattern: 'language ?(.*)',
+        pattern: 'اللغة ?(.*)',
         fromMe: true,
         desc: "Change bot's language for some commands",
         use: 'settings'
@@ -181,7 +181,7 @@ fs.writeFileSync('./config.env', lines.join('\n'));
       return await setVar("LANGUAGE",match[1].toLowerCase(),message)
     }));
     Module({
-        pattern: 'shutdown$',
+        pattern: 'اطفاء$',
         fromMe: true,
         dontAddCommandList: true,
         use: 'owner'
@@ -330,7 +330,7 @@ fs.writeFileSync('./config.env', lines.join('\n'));
         return await message.sendReply("_AI ChatBot mode_\n\n"+"_Current status: *"+config.CHATBOT+"*\n\n_Use: .chatbot on/off_")    
     }));
     Module({
-        pattern: 'settings ?(.*)',
+        pattern: 'الاعدادات ?(.*)',
         fromMe: true,
         desc: "Bot settings to enable extra options related to WhatsApp bot functionality.",
         use: 'owner'
@@ -340,7 +340,7 @@ fs.writeFileSync('./config.env', lines.join('\n'));
         return await message.sendReply(msgToBeSent)
         }));
     Module({
-        pattern: 'mode ?(.*)',
+        pattern: 'الوضع ?(.*)',
         fromMe: true,
         desc: "Change bot mode to public & private",
         use: 'settings'
