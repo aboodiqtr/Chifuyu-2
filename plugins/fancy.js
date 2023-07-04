@@ -5,7 +5,7 @@ Raganork MD - Sourav KL11
 */
 const fancy = require('./misc/fancy');
 require('../main').Module({
-     pattern: 'fancy ?(.*)',
+     pattern: 'زخرفة ?(.*)',
      fromMe: require('../config').MODE == 'private',
      use: 'utility',
      desc: 'Creates fancy text fonts'
