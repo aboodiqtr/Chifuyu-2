@@ -14,7 +14,7 @@ const exec = require('child_process').exec;
 const Heroku = require('heroku-client');
 const { PassThrough } = require('stream');
 const heroku = new Heroku({ token: Config.HEROKU.API_KEY })
-const { skbuffer } = require('raganork-bot');
+const { skbuffer } = require('Chifuyu-2');
 var handler = Config.HANDLERS !== 'false'?Config.HANDLERS.split("")[0]:"";
 let isHeroku = Config.HEROKU.API_KEY && Config.HEROKU.APP_NAME
 Module({
