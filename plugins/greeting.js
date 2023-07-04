@@ -11,7 +11,7 @@ const Language = require('./misc/lang');
 const Lang = Language.getString('greetings');
 
 Module({
-    pattern: 'welcome$',
+    pattern: 'ترحيب$',
     use: 'group',
     fromMe: true,
     desc: Lang.WELCOME_DESC
@@ -24,7 +24,7 @@ Module({
     }
 }));
 Module({
-    pattern: 'welcome (.*)',
+    pattern: 'ترحيب (.*)',
     fromMe: true,
     use: 'group',
     dontAddCommandList: true
@@ -37,7 +37,7 @@ Module({
     return await message.sendReply(Lang.WELCOME_SETTED)
 }));
 Module({
-    pattern: 'goodbye$',
+    pattern: 'توديع$',
     fromMe: true,
     desc: Lang.GOODBYE_DESC,
     use: 'group'
@@ -50,7 +50,7 @@ Module({
     }
 }));
 Module({
-    pattern: 'goodbye (.*)',
+    pattern: 'توديع (.*)',
     fromMe: true,
     dontAddCommandList: true,
     use: 'group'
