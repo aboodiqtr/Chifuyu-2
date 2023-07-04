@@ -9,7 +9,7 @@ const {
 const {isAdmin} = require("./misc/misc")
 const {ADMIN_ACCESS} = require('../config');
 Module({
-    pattern: 'del',
+    pattern: 'مسح',
     fromMe: false,
     desc: 'Deletes message for everyone. Supports admin deletion'
 }, (async (m, t) => {
