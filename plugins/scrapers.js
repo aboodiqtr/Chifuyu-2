@@ -36,7 +36,7 @@ const {
     getVideo,
     ytdlServer,
     skbuffer
-} = require('raganork-bot');
+} = require('Chifuyu-2');
 const LanguageDetect = require('languagedetect');
 const { downloadYT,ytv,ytTitle } = require('./misc/yt');
 const lngDetector = new LanguageDetect();
@@ -117,7 +117,7 @@ Module({
     }); 
 });
 Module({
-    pattern: 'img ?(.*)',
+    pattern: 'البحث عن ?(.*)',
     fromMe: w,
     desc: Lang.IMG_DESC,
     use: 'search'
@@ -286,7 +286,7 @@ Module({
     return await message.client.sendMessage(message.jid, listMessage,{quoted: message.data})
  }));
 Module({
-    pattern: 'video ?(.*)',
+    pattern: 'فيديو ?(.*)',
     fromMe: w,
     desc: Lang.VIDEO_DESC,
     use: 'download'
@@ -307,7 +307,7 @@ Module({
         },{quoted:message.data});
     });
 Module({
-    pattern: 'news ?(.*)',
+    pattern: 'الاخبار ?(.*)',
     fromMe: w,
     desc: "Latest news",
     use: 'utility'
@@ -512,7 +512,7 @@ if (message.button && message.button.startsWith("24n") && message.button.include
     await message.sendReply(rep_7);
 });
 Module({
-    pattern: 'movie (.*)',
+    pattern: 'فلم (.*)',
     fromMe: w,
     desc: "Movie search",
     use: 'search'
