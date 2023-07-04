@@ -46,7 +46,7 @@ Module({
     return  await message.send("_Chat cleared!_")  
 }));
     Module({
-    pattern: 'kick ?(.*)',
+    pattern: 'طرد ?(.*)',
     fromMe: false,
     desc: Lang.KICK_DESC,
     use: 'group'
@@ -95,7 +95,7 @@ Module({
 }
 }))
 Module({
-    pattern: 'add ?(.*)',
+    pattern: 'اضافة ?(.*)',
     fromMe: true,
     desc: Lang.ADD_DESC,
     warn:"You number might get banned, use with caution",
@@ -181,7 +181,7 @@ Module({
     return await message.client.sendMessage(message.jid,{text:msg,mentions:approvalJids},{quoted:message.data})
 }}))
 Module({
-    pattern: 'leave',
+    pattern: 'خروج',
     fromMe: true,
     desc: Lang.LEAVE_DESC
 }, (async (message, match) => {
@@ -465,7 +465,7 @@ return await message.sendReply(msg)
 }}));
 Module({
     pattern: 'tagall',
-    fromMe: false,
+    fromMe: true,
     desc: Lang.TAGALL_DESC,
     use: 'group'
 }, (async (message, match) => {
