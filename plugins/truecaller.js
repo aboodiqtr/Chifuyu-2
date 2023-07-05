@@ -3,11 +3,11 @@ Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 Raganork MD - Sourav KL11
 */
-const {find} = require('raganork-bot')
+const {find} = require('Chifuyu-2')
 const {Module} = require('../main');
 const s = require('../config');
 const wk = s.MODE == 'public' ? false : true
-Module({pattern: 'true ?(.*)', desc: 'Searches for number in truecaller!',use: 'search',fromMe: wk}, async (msg, query) => {
+Module({pattern: 'بحث عن جهة اتصال ?(.*)', desc: 'Searches for number in truecaller!',use: 'search',fromMe: wk}, async (msg, query) => {
 let user =  query[1];
 if (!user) return await msg.sendReply('_Need number, .true 91xxxxxxxxxx_');
 if (user.includes(" ")) return await msg.sendReply("_No space allowed in between numbers!_")
