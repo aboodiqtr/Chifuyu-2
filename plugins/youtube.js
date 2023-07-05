@@ -35,7 +35,7 @@ const {
   ytdlServer,
   getVideo,
   addInfo
-} = require('raganork-bot');
+} = require('Chifuyu-2');
 let configs = settingsMenu
 var handler = HANDLERS !== 'false'?HANDLERS.split("")[0]:""
 let fm = MODE == 'public' ? false : true
