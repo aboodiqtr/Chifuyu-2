@@ -28,7 +28,7 @@ const {Fancy} = require('raganork-bot')
 let {isAdmin} = require('./misc/misc');
 let Lang = getString('group');
 let {setWarn,resetWarn,mentionjid} = require('./misc/misc');
-Module({pattern: 'warn ?(.*)', fromMe: false,use: 'group', desc:Lang.WARN_DESC}, (async (m, mat) => { 
+Module({pattern: 'انذار ?(.*)', fromMe: false,use: 'group', desc:Lang.WARN_DESC}, (async (m, mat) => { 
 let adminAccesValidated = ADMIN_ACCESS ? await isAdmin(m,m.sender) : false;
 if (m.fromOwner || adminAccesValidated) {
 if (mat[1] === "reset") return await m.sendReply("*Wrong command! Use _.reset warn_*")
@@ -56,7 +56,7 @@ if (warn !== 0) {
     await m.client.groupParticipantsUpdate(m.jid, [user], "remove")
  }
 }}));
-Module({pattern: 'reset warn',use: 'group',fromMe: false, desc:'Resets the warn count of the user'}, (async (m, mat) => { 
+Module({pattern: 'حذف الانذارات',use: 'group',fromMe: false, desc:'Resets the warn count of the user'}, (async (m, mat) => { 
 let adminAccesValidated = ADMIN_ACCESS ? await isAdmin(m,m.sender) : false;
 if (m.fromOwner || adminAccesValidated) {
 var user = m.mention[0] || m.reply_message.jid
