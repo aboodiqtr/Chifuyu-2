@@ -1,13 +1,13 @@
 {
-  "name": "raganork-md",
+  "name": "Chifuyu-2",
   "version": "4.0.0",
-  "description": "Raganork whatsapp bot- Multi device version.",
+  "description": "Chifuyu-2",
   "scripts": {
-    "start": "pm2 start . --attach --name Raganork"
+    "start": "pm2 start . --attach --name Chifuyu"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/souravkl11/raganork-md.git"
+    "url": "git+https://github.com/aboodiqtr/Chifuyu-2"
   },
   "keywords": [
     "whatsapp",
@@ -15,9 +15,9 @@
     "multi-device"
   ],
   "author": "Sourav",
-  "developer": "@souravkl11",
+  "developer": "@aboodiqtr",
   "license": "GPL-3.0-or-later",
-  "homepage": "https://github.com/souravkl11/raganork#readme",
+  "homepage": "https://github.com/aboodiqtr/Chifuyu-2#readme",
   "dependencies": {
     "@adiwajshing/baileys": "git+https://github.com/souravkl11/Baileys.git",
     "@whiskeysockets/baileys": "6.3.0",
