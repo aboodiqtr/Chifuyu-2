@@ -5,7 +5,7 @@ Module({
 
 */
 const {Module} = require('../main')
-const {skbuffer} = require('raganork-bot');
+const {skbuffer} = require('Chifuyu-2');
 const axios = require('axios');
 const {MODE} = require('../config');
 let auto = MODE == 'public' ? false : true
@@ -487,19 +487,6 @@ Module({
 }, async (m,t) => {
 if (!encodeURIComponent(t[1])) return await m.sendReply("*Need text*")
 let api_url = base.format("https://textpro.me/create-cool-wall-graffiti-text-effect-online-1009.html",encodeURIComponent(t[1]))
-await m.sendMessage("_Please wait..._")
-let result_url = (await axios(api_url)).data
-if (typeof result_url === "number") return await m.sendReply("*Need "+result_url+" text!*\n*Ex: Text1,Text2*")
-await m.sendReply({url: result_url},'image') 
-});
-Module({
-  pattern: 'phub ?(.*)',
-  fromMe: auto,
-  desc: 'TextMaker',
-  use: 'textmaker',
-}, async (m,t) => {
-if (!encodeURIComponent(t[1])) return await m.sendReply("*Need text*")
-let api_url = base.format("https://textpro.me/pornhub-style-logo-online-generator-free-977.html",encodeURIComponent(t[1]))
 await m.sendMessage("_Please wait..._")
 let result_url = (await axios(api_url)).data
 if (typeof result_url === "number") return await m.sendReply("*Need "+result_url+" text!*\n*Ex: Text1,Text2*")
