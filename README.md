@@ -7,6 +7,11 @@
 <a href="https://www.buymeacoffee.com/souravkl11"><img src="https://img.buymeacoffee.com/button-api/?text=Support this project&emoji=&slug=souravkl11&button_colour=FFDD00&font_colour=000000&font_family=Poppins&outline_colour=000000&coffee_colour=ffffff" /></a><br>
 <div>
 <br>
+  
+### Replit Deploy
+1. ***Create Replit Account From [Here](https://replit.com/).***
+2. ***[Deploy on Replit](https://replit.com/github/vihangayt0/Astro-MD-V7-Replit).*** ***[[Tutorial]](https://youtu.be/rMycIWfmVQ4)***
+3. ***Add Bot Website To Uptimer From [Here](https://uptimerobot.com/).***
 
 ## Deploy to Heroku ↓
 
